@@ -14,32 +14,26 @@
             display:block;
         }
         .video-preview{
-            width: 300px;
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 10px;
+
         }
         .video-info{
             display: inline-block;
-            width: 200px;
+            width: 250px;
             margin-right: 0;
         }
         .channel-picture{
-            display: inline-block;
-            width: 40px;
+            width: 50px;
             vertical-align: top;
-            margin-right: 5px
         }
         .profile-picture{
-            width: 100%;
+            width: 40px;
             border-radius: 50px
         }
         .thumbnail-row {
             margin-bottom: 20px;
-            width: 300px
         }
         .thumbnail-image{
-            width: 300px;
+            width: 100%;
         }
         .video-title{
             margin-top: 0;
@@ -56,6 +50,16 @@
         .video-author{
             margin-bottom: 4px;
         }
+        .video-info-grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        .video-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 30px;
+        }
 
     </style>
     <head>
@@ -65,35 +69,189 @@
     </head>
     <body>
         <input class="searchbar" type="text" placeholder="Search">
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail-image" src="resources/thumbnail-1.webp">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="resources/profile-1.jpg">
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
                 </div>
-                <div class="video-info">
-                    <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
-                    <p class="video-author">Unbox Therapy</p>
-                    <p class="video-stats">1.7M views &#183 3 weeks ago</p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail-image" src="resources/thumbnail-2.webp">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="resources/profile-2.jpg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">SHerlock & Muycroft || Brother</p>
-                    <p class="video-author">dabrovvskax</p>
-                    <p class="video-stats">25K views &#183 1 year ago</p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-1.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
+                        <p class="video-author">Unbox Therapy</p>
+                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
+                    </div>
                 </div>
             </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">SHerlock & Muycroft || Brother</p>
+                        <p class="video-author">dabrovvskax</p>
+                        <p class="video-stats">25K views &#183 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-1.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
+                        <p class="video-author">Unbox Therapy</p>
+                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">SHerlock & Muycroft || Brother</p>
+                        <p class="video-author">dabrovvskax</p>
+                        <p class="video-stats">25K views &#183 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-1.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
+                        <p class="video-author">Unbox Therapy</p>
+                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">SHerlock & Muycroft || Brother</p>
+                        <p class="video-author">dabrovvskax</p>
+                        <p class="video-stats">25K views &#183 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-1.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
+                        <p class="video-author">Unbox Therapy</p>
+                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">SHerlock & Muycroft || Brother</p>
+                        <p class="video-author">dabrovvskax</p>
+                        <p class="video-stats">25K views &#183 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-1.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
+                        <p class="video-author">Unbox Therapy</p>
+                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">SHerlock & Muycroft || Brother</p>
+                        <p class="video-author">dabrovvskax</p>
+                        <p class="video-stats">25K views &#183 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-1.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
+                        <p class="video-author">Unbox Therapy</p>
+                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">SHerlock & Muycroft || Brother</p>
+                        <p class="video-author">dabrovvskax</p>
+                        <p class="video-stats">25K views &#183 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            
         </div>
 
 
