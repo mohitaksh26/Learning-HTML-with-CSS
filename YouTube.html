@@ -2,82 +2,98 @@
 <html>
     <Title>YouTube Clone</Title>
     <style>
-        p{
-            font-family: Roboto, Arial;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        .searchbar{
-            font-size: 20px;
-            margin-left: 12px;
-            margin-bottom: 20px;
-            display:block;
-        }
-        .video-info{
-            display: inline-block;
-            width: 250px;
-            margin-right: 0;
-        }
-        .channel-picture{
-            width: 50px;
-            vertical-align: top;
-        }
-        .profile-picture{
-            width: 40px;
-            border-radius: 50px
-        }
-        .thumbnail-row {
-            margin-bottom: 20px;
-        }
-        .thumbnail-image{
-            width: 100%;
-        }
-        .video-title{
-            margin-top: 0;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-            margin-bottom: 15px;
-        }
-        .video-author,
-        .video-stats{
-            font-size: 14px;
-            color: rgb(96,96,96);
-        }
-        .video-author{
-            margin-bottom: 4px;
-        }
-        .video-info-grid{
-            display: grid;
-            grid-template-columns: 50px 1fr;
-        }
-        .video-grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 20px;
-            row-gap: 30px;
-        }
 
     </style>
     <head>
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body style="margin-top: 80px; padding-left: 80px;">
 
         <div class="header">
-            <div class="left-section"></div>
-            <div class="middle-section"><input class="searchbar" type="text" placeholder="Search">
+            <div class="left-section">
+                <img class="hamburger" src="icons/hamburger.png">
+                <img class="youtube-logo" src="icons/youtube.png">
             </div>
-            <div class="right-section"></div>
-                        
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button">
+                    <img class="search-button-img" src="icons/search.png">
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-search-button-img" src="icons/mic.png">
+                </button>
+            </div>
+            <div class="right-section">
+                <img class="upload-icon" src="icons/upload.png">
+                <img class="apps-icon" src="icons/apps.png">
+                <div style=align-items:center" class="notif-icon-container">                    
+                    <img class="notif-icon" src="icons/notif.png">
+                    <div class="notif-count">3</div>
+                </div>
+                <img class="profile-icon" src="icons/profile.jfif">
+
+
+            </div>                        
+        </div>
+
+        <div style="
+        background-color: white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 55px;
+        width: 72px;
+        z-index: 101;
+
+        ">
+        <div class="sidebar-link">
+            <img src="icons/home.png">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/explore.png">
+            <div>Explore</div>
+
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/subscriptions.png">
+            <div>Subscriptions</div>
+
+        </div>
+
+        <div class="sidebar-link">
+            <img src="icons/originals.png">
+            <div>Originals</div>
+
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/music.png">
+            <div>Music</div>
+
+        </div>
+        <div class="sidebar-link">
+            <img src="icons/library.png">
+            <div>Library</div>
+
+        </div>
+        <div class="sidebar-link"></div>
+
+
         </div>
 
         <div class="video-grid">
             <div class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail-image" src="resources/thumbnail-1.webp">
+                    <div class="video-time">14:20</div>
+
                 </div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
@@ -93,13 +109,15 @@
             <div class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail-image" src="resources/thumbnail-2.webp">
+                    <div class="video-time">6:10</div>
+
                 </div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
                         <img class="profile-picture" src="resources/profile-2.jpg">
                     </div>
                     <div class="video-info">
-                        <p class="video-title">SHerlock & Muycroft || Brother</p>
+                        <p class="video-title">Sherlock & Mycroft || Brother</p>
                         <p class="video-author">dabrovvskax</p>
                         <p class="video-stats">25K views &#183 1 year ago</p>
                     </div>
@@ -108,6 +126,7 @@
             <div class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail-image" src="resources/thumbnail-1.webp">
+                    <div class="video-time">23:15</div>
                 </div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
@@ -117,147 +136,60 @@
                         <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
                         <p class="video-author">Unbox Therapy</p>
                         <p class="video-stats">1.7M views &#183 3 weeks ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="resources/profile-2.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">SHerlock & Muycroft || Brother</p>
-                        <p class="video-author">dabrovvskax</p>
-                        <p class="video-stats">25K views &#183 1 year ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="resources/profile-1.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
-                        <p class="video-author">Unbox Therapy</p>
-                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="resources/profile-2.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">SHerlock & Muycroft || Brother</p>
-                        <p class="video-author">dabrovvskax</p>
-                        <p class="video-stats">25K views &#183 1 year ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="resources/profile-1.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
-                        <p class="video-author">Unbox Therapy</p>
-                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="resources/profile-2.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">SHerlock & Muycroft || Brother</p>
-                        <p class="video-author">dabrovvskax</p>
-                        <p class="video-stats">25K views &#183 1 year ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="resources/profile-1.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
-                        <p class="video-author">Unbox Therapy</p>
-                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="resources/profile-2.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">SHerlock & Muycroft || Brother</p>
-                        <p class="video-author">dabrovvskax</p>
-                        <p class="video-stats">25K views &#183 1 year ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="resources/profile-1.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
-                        <p class="video-author">Unbox Therapy</p>
-                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="resources/profile-2.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">SHerlock & Muycroft || Brother</p>
-                        <p class="video-author">dabrovvskax</p>
-                        <p class="video-stats">25K views &#183 1 year ago</p>
                     </div>
                 </div>
             </div>
 
-            
-        </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
+                    <div class="video-time">6:10</div>
+
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Sherlock & Mycroft || Brother</p>
+                        <p class="video-author">dabrovvskax</p>
+                        <p class="video-stats">25K views &#183 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-1.webp">
+                    <div class="video-time">23:15</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-1.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">This New FOLDING Laptop Will Bend Your Mind...</p>
+                        <p class="video-author">Unbox Therapy</p>
+                        <p class="video-stats">1.7M views &#183 3 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail-image" src="resources/thumbnail-2.webp">
+                    <div class="video-time">6:10</div>
+
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="resources/profile-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Sherlock & Mycroft || Brother</p>
+                        <p class="video-author">dabrovvskax</p>
+                        <p class="video-stats">25K views &#183 1 year ago</p>
+                    </div>
+                </div>
+            </div>
 
 
 
